@@ -50,6 +50,6 @@
     <access origin="*"/> <!-- allow local pages -->
 	
     <gap:plugin name="org.apache.cordova.camera" />
-	<gap:plugin name="org.apache.cordova.geoloaction" />
+	<gap:plugin name="org.apache.cordova.GeoBroker" />
 
 </widget>
