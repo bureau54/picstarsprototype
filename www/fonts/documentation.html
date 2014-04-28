@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<title>Awesome iOS7 Style Font Icons - Wordpress Plugin</title>
+<link rel="stylesheet" href="css/ios7-style-font-icons.min.css" />
+<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+	<style>
+        section, header, footer {display: block;}
+        body {
+            font-family: sans-serif;
+            color: #444;
+            line-height: 1.5;
+            font-size: 1em;
+        }
+        * {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Raleway', sans-serif;
+			font-weight:400;
+			margin-bottom:20px;
+		}
+		h2.icon-heading {
+			font-size:3em;
+		}
+		a {
+			color:#73BDF8;	   
+			text-decoration: none;
+			outline: none;
+		}
+		
+		a:hover {color:#5AB1F6;}
+		
+		a,
+		span.unicode,
+        span.icon-large {
+			transition-property: all;
+			-webkit-transition-duration: 600ms;
+			-webkit-transition-timing-function: ease-in-out;	
+			-moz-transition-duration: 600ms;
+			-moz-transition-timing-function: ease-in-out;	
+			-o-transition-duration: 600ms;
+			-o-transition-timing-function: ease-in-out;				
+		}
+		
+		a.button {
+			background-color:#73BDF8;
+			color:#fff;
+			padding:10px 15px;
+			text-align:center;
+			position:relative;
+			margin-top:25px;
+            -moz-border-radius: 5px; 
+            -webkit-border-radius: 5px;
+             border-radius: 5px;			
+		}
+		a.button:hover {background-color:#5AB1F6;color:#fff;}
+		
+		span.unicode,
+        span.icon-large {
+			transition-property: opacity;	
+		}
+		  
+        span.icon-wrap {float:left;width:24.5%;padding:15px;text-align:left;position:relative;cursor:pointer;}
+        span.icon-name {margin-left:15px;}
+        
+        span.unicode,
+        span.icon-large {visibility:hidden;position:absolute;display:block;opacity:0;}
+        
+        span.details {position:relative;}
+        span.unicode {color:#ccc;cursor:default;}
+        
+        span.icon-large {
+            background-color:#ccc;
+            top:50%;
+            margin-top:-40px;
+            left:-80px;
+            width:80px;
+            z-index:1;
+            text-align:center;
+            -moz-border-radius: 100%; 
+            -webkit-border-radius: 100%;
+             border-radius: 100%;		
+        }
+        span.icon-large i {font-size:50px;line-height:80px;}
+       
+	   	span.icon-wrap:hover span.unicode {margin-left:31px;} 
+        span.icon-wrap:hover span.unicode,
+        span.icon-wrap:hover span.icon-large {visibility:visible;opacity:1;}
+        
+        .icons-wrapper {margin:0 -15px;}
+        section.section,
+		header.header-wrap,
+		footer.footer-wrap {width:100%;max-width:980px;margin:0 auto;}
+		
+		div.examples,
+		footer.footer-wrap,
+		section#examples {margin-bottom:70px;}
+		
+		p,
+		pre,
+		.main-nav,
+		section#description {margin-bottom:25px;}
+		header.header-wrap {text-align:center;}
+        
+		ul li,
+		ol li {margin-left:25px;}
+		
+		.icons-ul li {
+		list-style:none;
+		}
+		
+        nav.main-nav li {display:inline;margin:0 0 0 14px;font-size:1em;}
+		nav.main-nav li:first-child {margin-left:0;}
+        nav.main-nav li a span {margin-left:3px;}
+		
+		pre,
+		code {
+		display: inline;
+		padding:5px 10px;
+		line-height: 20px;
+		word-break: break-all;
+		word-wrap: break-word;
+		white-space: pre;
+		white-space: pre-wrap;
+		background-color: #f5f5f5;
+		border: 1px solid #ccc;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		}
+		
+		pre {display:block;}
+
+		
+		.clearfix { *zoom: 1; }
+		.clearfix:after { content: " "; display: table; }
+		.clearfix:after { clear: both; }		
+        
+    </style>
+</head>
+<body>
+	
+<header class="header-wrap">
+	<p><img src="http://themeva.com/ios7-style-font-icons/images/awesome-ios7-style-font-icons.jpg" width="400" height="344" alt="awesome ios7 style font icons" /></p>
+	<p>by <a href="http://themeforest.net/user/themeva?ref=themeva">themeva</a></p>
+</header>
+
+<section id="documentation" class="section clearfix">
+	<h2 class="icon-heading">Table of Contents</h2>
+	<ol>
+	  <li><a href="#reference-site">Icon Reference Site</a></li>
+	  <li><a href="#wp-insall">WordPress Installation</a></li>
+	  <li><a href="#htmlinstall">Add Icons to a HTML site</a></li>
+	  <li><a href="#addicon-editor">Add an Icon to Page / Post</a></li>
+	  <li><a href="#htmlwpcode">HTML Code + WordPress Shortcode</a></li>
+	  <li><a href="#customize-icon">Set  Icon Color + Size</a></li>
+	  <li><a href="#examples">Examples of Use</a></li>
+  </ol>
+	<p>&nbsp;</p>
+	
+ 
+	<div class="examples" id="reference-site">
+		<h2>Icon Reference Site</h2>
+		<p>Full a full upto date list of all the iOS7 Style Font Icons, click the button below.</p>
+        <p><a class="button clearfix" href="http://themeva.com/ios7-style-font-icons/" target="_blank">Font Icon Reference Site</a></p>
+	</div>    
+  <div class="examples" id="wp-insall">
+		<h2>WordPress Installation</h2>
+		<p><ol>
+		<li>Log-in to your WordPress site</li>
+		<li>Navigate to the Plugins Menu > Click<strong> Add New</strong> > Click the <strong>Upload</strong> link</li>
+		<li>Click <strong>Choose File</strong> &gt; Locate the iOS7 Style Font Icon <strong>.zip</strong> file > Click <strong>Install Now</strong></li>
+		<li>Click <strong>Activate Plugin</strong></li>
+		<li>Create / Edit a Page or Post and select your icons via the "<strong>Font Icon</strong>" Select Menu within the Editor.</li>
+		</ol></p>
+	</div>
+
+	<div class="examples" id="htmlinstall">
+		<h2>Add iOS7 Style Font Icons to a HTML site</h2>
+		<p>1. Copy the following folders from the plugin folder:</p>
+		<p><ul class="icons-ul">
+		<li><em>css</em></li>
+		<li><em>fonts</em></li>
+		<li><em>js</em></li>
+		</ul></p>
+		<p>2. Upload them to your site. e.g.</p>
+		<p><ul class="icons-ul">
+		<li><em>http://your-site-name.com/css</em></li>
+		<li><em>http://your-site-name.com/fonts</em></li>
+		<li><em>http://your-site-name.com/js</em></li>
+		</ul></p>
+		<p>3. Add the following HTML into the <code>&lt;head&gt;</code> section of your HTML page:</p>
+		<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/ios7-style-font-icons.min.css&quot; /&gt;
+&lt;!--[if lte IE 7]&gt;&lt;script src=&quot;js/ios7-style-font-icons-ie7.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;</pre>
+	</div>
+
+	<div class="examples" id="addicon-editor">
+		<h2>Add an Icon to WordPress Pages / Posts</h2>
+		<ol>
+            <li>Create / Edit a Page or Post</li>
+            <li>Within the Page / Post Editor, locate the &quot;<strong>Font Icons</strong>&quot; select menu.<br><br>
+                <p><img src="http://themeva.com/ios7-style-font-icons/images/ios7-style-font-icons-wordpress.jpg" alt="add icon to a page / post" /></p>
+            </li>
+            <li>Select the Icon you wish to place into your Page / Post.</li>
+		</ol>
+		<p>&nbsp;</p>
+	</div>
+
+	<div class="examples" id="htmlwpcode">
+	<h2> HTML Code + WordPress Shortcode</h2>
+		<p>Place icons almost anywhere with the <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code> HTML tags. e.g.</p>
+		<p>HTML: <pre>&lt;i class=&quot;icon-book&quot;&gt;&lt;/i&gt;</pre></p>
+		<p>Shortcode: <pre>[icon name=&quot;icon-book&quot; /]</pre></p>
+  </div>  
+
+	<div class="examples">
+		<h2>Unicode Example</h2>
+		<p>Visit the <a href="http://themeva.com/ios7-style-font-icons/">Font Icons</a> page and hover over the icon you wish to grab the unicode from, copy the unicode. e.g. <strong>E17C</strong></p>
+		<p>HTML: <pre>&lt;span class=&quot;fastforward&quot;&gt;&lt;/span&gt;</pre></p>
+		<p>CSS: <pre>span.fastforward {
+	font-family:&quot;ios7-style-font-icons&quot;;
+}
+span.fastforward:before {
+	content: &quot;\E17C&quot;;
+}</pre></p>
+	</div>      
+    
+  <div class="examples" id="customize-icon">
+		<h2>Set Icon Color + Size</h2>
+  	  <ol>
+		  <li>For WordPress, switch to <strong>Text</strong> view, for HTML, simply edit the HTML.<br>
+            <br>
+<img src="http://themeva.com/ios7-style-font-icons/images/change-style.jpg" alt="add icon to a page / post" />
+              <p>&nbsp;</p>
+		</li>
+		  <li>
+            <p><strong>SIZE </strong>- To change the size, add an extra class after the icon name e.g.</p>
+            <p>HTML:<br>
+<code>&lt;i class=&quot;icon-book <strong style="color:#EE6F5F">icon-2x</strong>&quot;&gt;&lt;/i&gt;</code></p>
+			
+            <p>Shortcode:<br>
+<code>[icon name=&quot;icon-book <strong style="color:#EE6F5F">icon-2x</strong>&quot; /]</code></p>
+
+            <br>
+            Choose from the following sizes <code>icon-large</code> , <code>icon-2x</code> ,  <code>icon-3x</code> ,  <code>icon-4x</code><br>
+            <br><br>
+</li>
+		  <li>
+			  <p><strong>COLOR </strong>- To add a color to your icon using HTML, simply add a bit of inline CSS styling. For the WordPress Shortcode, add the <strong>iconcolor</strong> attribute.</p>
+              <p>Set the hex color ( <strong>#60b5f6</strong> ) to the color you require. e.g.</p>
+          <p>HTML<br>
+<code>&lt;i class=&quot;icon-book&quot; <strong style="color:#EE6F5F">style="color:#60b5f6;"</strong>&gt;&lt;/i&gt;</code></p>
+		<p>Shortcode:<br>
+<code>[icon name=&quot;icon-book&quot; <strong style="color:#EE6F5F">iconcolor="#60B5F6"</strong> /]</code></p>
+
+</li>
+	  </ol>	
+	</div>   
+</section>
+
+<section id="examples" class="section clearfix">
+  <h2 class="icon-heading">Examples of Use</h2>
+    <p>See examples of how to use the Font Icons within the content of your site.</p>
+	<p><a class="button clearfix" href="http://themeva.com/ios7-style-font-icons/" target="_blank">Click for Examples of Use</a></p>  
+
+<div class="examples">
+		<h2>Icon Sizes</h2>
+		<p>Icons can be increased in size using <code>icon-large</code> , <code>icon-2x</code> , <code>icon-3x</code> or <code>icon-4x</code>.</p>
+		<p><i class="icon-book icon-large"></i> icon-book</p>
+		<p><i class="icon-book icon-2x"></i> icon-book</p>
+		<p><i class="icon-book icon-3x"></i> icon-book</p>
+		<p><i class="icon-book icon-4x"></i> icon-book</p>
+		
+		<pre>&lt;i class="icon-book icon-large"&gt;&lt;/i&gt; icon-book</pre>
+		<pre>&lt;i class="icon-book icon-2x"&gt;&lt;/i&gt; icon-book</pre>
+		<pre>&lt;i class="icon-book icon-3x"&gt;&lt;/i&gt; icon-book</pre>
+		<pre>&lt;i class="icon-book icon-4x"&gt;&lt;/i&gt; icon-book</pre>
+		
+	</div>
+
+<div class="examples">
+		<h2>Bulleted Lists</h2>
+		<p></p><ul class="icons-ul">
+			<li><i class="icon-ok"></i> icon-ok</li>
+			<li><i class="icon-ok"></i> icon-ok</li>
+			<li><i class="icon-ok"></i> icon-ok</li>
+			<li><i class="icon-ok"></i> icon-ok</li>
+		</ul><p></p>
+		<pre>&lt;ul class="icons-ul"&gt;
+	&lt;li&gt;&lt;i class="icon-ok"&gt;&lt;/i&gt; icon-ok&lt;/li&gt;
+	&lt;li&gt;&lt;i class="icon-ok"&gt;&lt;/i&gt; icon-ok&lt;/li&gt;
+	&lt;li&gt;&lt;i class="icon-ok"&gt;&lt;/i&gt; icon-ok&lt;/li&gt;
+	&lt;li&gt;&lt;i class="icon-ok"&gt;&lt;/i&gt; icon-ok&lt;/li&gt;
+&lt;/ul&gt;</pre>
+	</div>
+
+<div class="examples">
+		<h2>Stacked Icons</h2>
+		<p>Stacked icons is a method for easily stacking multiple icons <strong>on top of each other</strong> using the icon-stack class on the parent and icon-stack-base for the bottom icon.</p>
+		<p><span class="icon-stack"><i class="icon-check-empty icon-stack-base"></i><i class="icon-beaker"></i></span></p>
+		
+		<pre>&lt;span class="icon-stack"&gt;
+	&lt;i class="icon-check-empty icon-stack-base"&gt;&lt;/i&gt;
+	&lt;i class="icon-beaker"&gt;&lt;/i&gt;
+&lt;/span&gt;</pre>
+		<p><span class="icon-stack"><i class="icon-circle-blank icon-stack-base"></i><i class="icon-shopping-cart"></i></span></p>
+		<pre>&lt;span class="icon-stack"&gt;
+	&lt;i class="icon-circle-blank icon-stack-base"&gt;&lt;/i&gt;
+	&lt;i class="icon-shopping-cart"&gt;&lt;/i&gt;
+&lt;/span&gt;</pre>
+		<p><span class="icon-stack"><i class="icon-circle icon-stack-base"></i><i class="icon-thumbs-up-alt icon-light"></i></span></p>
+		<pre>&lt;span class="icon-stack"&gt;
+	&lt;i class="icon-circle icon-stack-base"&gt;&lt;/i&gt;
+	&lt;i class="icon-thumbs-up-alt icon-light"&gt;&lt;/i&gt;
+&lt;/span&gt;</pre>
+		<p><span class="icon-stack"><i class="icon-food"></i><i class="icon-ban-circle icon-stack-base"></i></span></p>
+		<pre>&lt;span class="icon-stack"&gt;
+	&lt;i class="icon-food"&gt;&lt;/i&gt;
+	&lt;i class="icon-ban-circle icon-stack-base"&gt;&lt;/i&gt;
+&lt;/span&gt;</pre>
+		
+	</div>            
+    
+</section> 
+</body>
+</html>
