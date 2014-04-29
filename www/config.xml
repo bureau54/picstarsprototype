@@ -49,7 +49,14 @@
     -->
     <access origin="*"/> <!-- allow local pages -->
 	
-    <gap:plugin name="org.apache.cordova.camera" />
-	<gap:plugin name="org.apache.cordova.GeoBroker" />
+       <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
 
 </widget>
