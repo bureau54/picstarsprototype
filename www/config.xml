@@ -56,7 +56,7 @@
         Otherwise, you can specify specific domains:
     -->
     <access origin="*"/> <!-- allow local pages -->
-	<gap:plugin name="org.apache.cordova.camera.CameraLauncher" />
+	<gap:plugin name="com.apache.cordova.camera" />
 	
 	
 
