@@ -305,7 +305,7 @@ function capturePhoto(){
 
   //sourceType 1: camera; 2: Photo-Library
   
- navigator.camera.getPicture(getPhoto, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
+ navigator.camera.getPicture(getPhoto, onFail, { quality: 50});
   
 }
 
@@ -314,7 +314,7 @@ function getPhoto(imageData) {
   navigator.geolocation.getCurrentPosition(onSuccess, onError);
     
   //Photo anzeigen
-  jQuery('#instant-shot').attr('src', imageData);
+  jQuery('#instant-shot').attr('src', "data:image/jpeg;base64," +imageData);
   swipeDashboard();
   activateViewById('photopost');
     
