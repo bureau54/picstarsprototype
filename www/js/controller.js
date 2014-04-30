@@ -314,7 +314,7 @@ function getPhoto(imageData) {
   navigator.geolocation.getCurrentPosition(onSuccess, onError);
     
   //Photo anzeigen
-  jQuery('#instant-shot').attr('src', "data:image/jpeg;base64," +imageData);
+  jQuery('#instant-shot').attr('src', imageData);
   swipeDashboard();
   activateViewById('photopost');
     
