@@ -305,7 +305,7 @@ function capturePhoto(){
 
   //sourceType 1: camera; 2: Photo-Library
   
-  navigator.camera.getPicture(getPhoto,null,{destinationType : destinationType.FILE_URI, quality:100});
+ navigator.camera.getPicture(getPhoto, onFail, { quality: 50 });
   
 }
 
@@ -318,6 +318,10 @@ function getPhoto(imageData) {
   swipeDashboard();
   activateViewById('photopost');
     
+}
+function onFail(error) {
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
 }
 
 // onSuccess Callback
