@@ -481,6 +481,10 @@ function init(){
       });
 	}
 	
+	if (jQuery('.img-wrapper').length > 0){
+		jQuery('.img-wrapper').css('height', jQuery('.img-wrapper').width() + 'px');
+	}
+	
 	if (jQuery(".photopost-textedit").length > 0){
     
 	  jQuery(".photopost-textedit").swipe( {

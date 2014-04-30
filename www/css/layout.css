@@ -48,7 +48,11 @@ p{ color:#222; font-size:14px; line-height:14px; margin:0;}
 #login{display:block;}
 #feed, #instant-photo, #messageBoard, #photopost{ display:none;}
 
-#instant-shot{height:200px;}
+.img-wrapper{
+	width:100%;
+	overflow:hidden;
+	
+}
 .view{
 	margin-top: 50px;
 	padding-bottom: 50px;	
