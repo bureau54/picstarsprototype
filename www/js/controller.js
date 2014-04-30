@@ -305,7 +305,7 @@ function capturePhoto(){
 
   //sourceType 1: camera; 2: Photo-Library
   
- navigator.camera.getPicture(getPhoto, onFail, { quality: 50 });
+ navigator.camera.getPicture(getPhoto, onFail, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
   
 }
 
