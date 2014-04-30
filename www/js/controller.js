@@ -117,9 +117,9 @@ function getPosts(){
 function addPost(){
   
   var imageData = jQuery('#instant-shot').attr('src');
-  var message = jQuery('#photo-message-text').val();
-  var brand1, brand2, brand3 = "";
-    
+  //var message = jQuery('#photo-message-text').val();
+  //var brand1, brand2, brand3 = "";
+  /*  
   if (brands[0])
     var brand1 = brands[0];
   
@@ -129,11 +129,11 @@ function addPost(){
   if (brands[2])
     var brand3 = brands[2];
   
-      
+  */    
   jQuery.ajax({
 		type: 'POST',
 		url: 'http://picstarsprototype.b54server.ch/addPost',
-		data: { photo: imageData, msg: message, lat: post.latitude, long: post.longitude, altitude: post.altitude, heading: post.heading, speed: post.speed, brand1: brand1, brand2: brand2, brand3: brand3  },
+		data: { photo: imageData},
 		beforeSend:function(){
         
 		  jQuery('#movingBallG').css('display', 'block');
