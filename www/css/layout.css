@@ -50,6 +50,7 @@ p{ color:#222; font-size:14px; line-height:14px; margin:0;}
 
 .img-wrapper{
 	width:100%;
+	min-height:500px;
 	overflow:hidden;
 	
 }
