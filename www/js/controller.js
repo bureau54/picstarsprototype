@@ -275,6 +275,30 @@ function getMessages(){
   });
 }
 
+function reportContent(node){
+   
+  
+  jQuery.ajax({
+		type: 'POST',
+		url: 'http://picstarsprototype.b54server.ch/reportInappropriateContent',
+		data: {nid: node},
+		beforeSend:function(){
+        
+          	  
+		},
+		success:function(data){
+				  
+          alert("Inappropiate content reported. Thank you.")
+		  showFeed();
+    	},
+		error:function(){
+			
+			alert("Service: Report inappropriate content not available.")
+			
+		}
+  });
+}
+
 function getLocationAddress(latlong){
 
   $url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=" +latlong+ "&sensor=false"
@@ -300,6 +324,28 @@ function getLocationAddress(latlong){
 
 
 }
+
+function activateLogin(){
+	
+	if (jQuery("#term").prop('checked')){
+	
+	  jQuery("#noLogin").animate({
+        opacity: 1.0
+        }, 1000, function() {
+        // Animation complete.
+     });
+	}
+}
+
+function showTerms(){
+	jQuery(".full-terms").animate({
+        opacity: 1.0
+      }, 1000, function() {
+      // Animation complete.
+   });
+	
+}
+
 
 function capturePhoto(){
 
