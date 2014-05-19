@@ -12,7 +12,7 @@ label.checkbox, label.radio                                 { text-align:left; w
 form span                                                   { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 fieldset                                                    { margin:0 0 2px 0; padding:0; display:block; }
 fieldset small                                              { display:none; }
-input, textarea, select                          { margin:0; padding:0 10px; display:block; border:none; background:#fff; border-radius:0; width:70%; height:40px; font:14px/40px Sans-Serif; color:#ccc; border:solid 1px #222; overflow:hidden; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
+input, textarea, select                          { margin:0; padding:0 10px; display:block; border:none; background:#fff; border-radius:0; width:70%; height:60px; font:24px/60px Sans-Serif; color:#ccc; border:solid 1px #222; overflow:hidden; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
 textarea                                                    { padding:0; resize:vertical; min-height:150px; width:80%; border:none; background:rgba(200,200,200,1.0); color:#fff; margin-left:20px; }
 input[type="search"]                                        { -webkit-padding-start:0;  }
 
