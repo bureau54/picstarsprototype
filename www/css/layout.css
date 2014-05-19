@@ -253,7 +253,7 @@ height:20px;
 .movingBallLineG{
 position:absolute;
 left:0px;
-top:8px;
+bottom:20px;
 height:4px;
 width:100%;
 background-color:#FFFFFF;
