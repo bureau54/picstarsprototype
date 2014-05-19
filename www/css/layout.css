@@ -261,8 +261,8 @@ background-color:#FFFFFF;
 
 .movingBallG{
 background-color:#000000;
-position:relative;
-top:10px;
+position:absolute;
+top:40px;
 left:0;
 width:20px;
 height:20px;
@@ -299,7 +299,7 @@ left:20px;
 }
 
 50%{
-left:280px;
+left:100%;
 }
 
 100%{
@@ -314,7 +314,7 @@ left:20px;
 }
 
 50%{
-left:280px;
+left:100%;
 }
 
 100%{
@@ -329,7 +329,7 @@ left:20px;
 }
 
 50%{
-left:280px;
+left:100%;
 }
 
 100%{
@@ -344,7 +344,7 @@ left:20px;
 }
 
 50%{
-left:280px;
+left:100%;
 }
 
 100%{
@@ -359,7 +359,7 @@ left:20px;
 }
 
 50%{
-left:280px;
+left:100%;
 }
 
 100%{
