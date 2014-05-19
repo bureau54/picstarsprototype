@@ -142,13 +142,13 @@ img                                             { border:0; vertical-align:middl
 
 a.btn, 
 .btn,
-button                                          { margin:2px; padding:1px 10px 0; display:inline-block; color:#ccc; font-size:34px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+button                                          { margin:2px; padding:1px 10px 0; display:inline-block; color:#ccc; font-size:44px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
 
 a.btn.small, 
 .btn.small                                      {font-size:12px; line-height:18px; }
 
-.btn-large                                      {font-size:46px; line-height:34px; }
+.btn-large                                      {font-size:56px; line-height:44px; }
 
 [data-counter]:after {
   	content: attr(data-counter);
