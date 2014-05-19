@@ -355,7 +355,8 @@ function capturePhoto(){
 
 function getPhoto(imageData) {
 
-  navigator.geolocation.getCurrentPosition(onSuccess, onError);
+  navigator.geolocation.getCurrentPosition(onSucess, onError,{frequency:5000,maximumAge: 0, timeout: 100, enableHighAccuracy:true}); 
+  //navigator.geolocation.getCurrentPosition(onSuccess, onError);
     
   //Photo anzeigen
   jQuery('#instant-shot').attr('src', "data:image/jpeg;base64," +imageData);
