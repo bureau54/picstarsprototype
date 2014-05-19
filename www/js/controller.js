@@ -46,9 +46,7 @@ jQuery(document).ready(function(){
 	    
     init();
 	
-	jQuery(window).resize();
 	
-		
 	jQuery("#noLogin").click(function(){
 		
         showFeed();
