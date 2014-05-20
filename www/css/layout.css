@@ -88,8 +88,8 @@ p.msg-title                                    { color:#222; font-size:14px; fon
 p.msg-body                                    { color:#222; font-size:12px; line-height:14px;}
 
 /***** Feed Styles *****/
-p.feed-facts                                    { color:#fff; font-size:12px; line-height:14px; margin: 10px 20px 10px 20px;}
-span.feed-facts-big                             { color:#fff; font-size:14px; font-weight:600; line-height:14px;}
+p.feed-facts                                    { color:#fff; font-size:14px; line-height:16px; margin: 10px 20px 10px 20px;}
+span.feed-facts-big                             { color:#fff; font-size:16px; font-weight:600; line-height:14px;}
 h1.header{ font-size:18px; line-height:20px; margin:0px; text-transform:uppercase;}
 
 #messageBoard{
